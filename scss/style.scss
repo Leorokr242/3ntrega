@@ -4,63 +4,46 @@
 @import "./main";
 @import "./footer";
 
-
-
 * {
     @include reset;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; }
 
 @font-face {
     font-family: titule;
-    src: url("../assets/Fonts/winterbeauty-Script.otf");
-}
+    src: url("../assets/Fonts/winterbeauty-Script.otf"); }
 
 body {
     background-color: map-get($colores, "body");
-    height: auto;
-}
-
+    height: auto; }
 
 .grad {
-    background-image: linear-gradient(to right, $gradienteS);
-}
+    background-image: linear-gradient(to right, $gradienteS); }
 
 .tit {
     @include ShadowT font-family: titule;
     font-size: 2em;
-    color: map-get($colores, "titulo")
-}
+    color: map-get($colores, "titulo") }
 
 .radio {
     border-radius: $bordeRedondo;
-    @include ShadowB;
-}
+    @include ShadowB; }
 
 .back {
-    background-color: map-get($colores, "fondoHeader");
-
-}
+    background-color: map-get($colores, "fondoHeader"); }
 
 .bot {
     perspective: 2500;
-    transition: 1s ease;
-}
+    transition: 1s ease; }
 
 .bot:hover {
-    font-size: 1.5em;
-}
-
+    font-size: 1.5em; }
 
 #suti2venta {
     background-color: map-get($colores, "fondoHeader");
-    margin: 40px 0 40px 0;
-
-}
+    margin: 40px 0 40px 0; }
 
 #articMonk {
-    margin-top: 40px;
-}
+    margin-top: 40px; }
 
 /* PAGINA HISTORIA */
 
@@ -78,9 +61,7 @@ body {
     padding: 10px;
     font-family: titule;
     font-size: 4em;
-    text-align: center;
-
- }
+    text-align: center; }
   
 #imagen {
     display: flex;
@@ -91,11 +72,29 @@ body {
 
 #prodTit {
     @extend #tituloHistoria;
-    @include ShadowT
-    
-}
+    @include ShadowT }
 
 #servTit {
     @extend #tituloHistoria;
-    @include ShadowT
-}
+    @include ShadowT }
+
+// PAGINA CONTACTOS
+
+#contactos {
+    @include bordes;
+    @extend .radio;
+    border: 3px solid red; 
+    width: fit-content; }
+
+#contacTit {
+    @extend #tituloHistoria }
+    
+.cont {
+    border-radius: 10px;
+    margin: 10px; }
+
+#main--contacto {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center; }
