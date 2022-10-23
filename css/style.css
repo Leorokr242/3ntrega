@@ -27,6 +27,125 @@ footer {
       width: 75px;
       padding: 5px; }
 
+#contactos {
+  margin: 40px 10px 0 10px;
+  padding: 10px;
+  border: 3px solid red;
+  width: fit-content; }
+
+#contacTit {
+  margin: 40px 10px 10px 10px;
+  padding: 10px;
+  font-family: titule;
+  font-size: 4em;
+  text-align: center; }
+
+.cont {
+  border-radius: 10px;
+  margin: 10px; }
+
+#main--contacto {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center; }
+
+#mainHistoria p {
+  text-align: justify;
+  margin: 0px 20px 0 20px; }
+
+#imgHistoria {
+  width: 100vw;
+  height: 80px;
+  margin-top: 40px; }
+
+#tituloHistoria, #prodTit, #servTit {
+  margin: 40px 10px 10px 10px;
+  padding: 10px;
+  font-family: titule;
+  font-size: 4em;
+  text-align: center; }
+
+#imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px 0; }
+
+#prodTit {
+  text-shadow: 5px 5px 5px rgba(51, 51, 51, 0.356); }
+
+#servTit {
+  text-shadow: 5px 5px 5px rgba(51, 51, 51, 0.356); }
+
+.titulo--servicios {
+  margin: 40px 10px 10px 10px;
+  padding: 10px;
+  font-family: titule;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(51, 51, 51, 0.356); }
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: #000;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s ease;
+  backface-visibility: hidden; }
+  .card:hover {
+    transform: scale(1.05); }
+  .card:hover:after {
+    height: 280px; }
+  .card:hover .con-text p {
+    margin-bottom: 0px;
+    opacity: 1; }
+  .card:hover img {
+    transform: scale(1.25); }
+  .card:after {
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%); }
+  .card img {
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease; }
+  .card .con-text {
+    z-index: 30;
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px; }
+  .card .con-text p {
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column; }
+
+.marg--servicios {
+  margin: 0 30px 10px 30px; }
+
+.container--servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
 * {
   margin: 0;
   padding: 0;
@@ -69,48 +188,3 @@ body {
 
 #articMonk {
   margin-top: 40px; }
-
-/* PAGINA HISTORIA */
-#mainHistoria p {
-  text-align: justify;
-  margin: 0px 20px 0 20px; }
-
-#imgHistoria {
-  width: 100vw;
-  height: 80px;
-  margin-top: 40px; }
-
-#tituloHistoria, #prodTit, #servTit, #contacTit {
-  margin: 40px 10px 10px 10px;
-  padding: 10px;
-  font-family: titule;
-  font-size: 4em;
-  text-align: center; }
-
-#imagen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0 30px 0; }
-
-#prodTit {
-  text-shadow: 5px 5px 5px rgba(51, 51, 51, 0.356); }
-
-#servTit {
-  text-shadow: 5px 5px 5px rgba(51, 51, 51, 0.356); }
-
-#contactos {
-  margin: 40px 10px 0 10px;
-  padding: 10px;
-  border: 3px solid red;
-  width: fit-content; }
-
-.cont {
-  border-radius: 10px;
-  margin: 10px; }
-
-#main--contacto {
-  display: flex;
-  width: 100vw;
-  align-items: center;
-  justify-content: center; }

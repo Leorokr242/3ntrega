@@ -1,0 +1,18 @@
+.titulo--servicios {
+    @include titulos
+    @include ShadowT
+}
+.card{
+    @include cards
+
+}
+.marg--servicios{
+    margin: 0 30px 10px 30px;
+}
+.container--servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}

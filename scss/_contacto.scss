@@ -1,0 +1,18 @@
+#contactos {
+    @include bordes;
+    @extend .radio;
+    border: 3px solid red; 
+    width: fit-content; }
+
+#contacTit {
+    @include titulos }
+    
+.cont {
+    border-radius: 10px;
+    margin: 10px; }
+
+#main--contacto {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center; }
