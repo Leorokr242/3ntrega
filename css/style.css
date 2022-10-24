@@ -112,7 +112,7 @@ footer {
     width: 100%;
     content: '';
     left: 0px;
-    bottom: 0px;
+    bottom: 1px;
     height: 150px;
     position: absolute;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%); }
@@ -136,6 +136,10 @@ footer {
     align-items: center;
     justify-content: flex-end;
     flex-direction: column; }
+
+.card div h2 a {
+  text-decoration: none;
+  color: white; }
 
 .marg--servicios {
   margin: 0 30px 10px 30px; }
