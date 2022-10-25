@@ -28,10 +28,9 @@ footer {
       padding: 5px; }
 
 #contactos {
-  margin: 40px 10px 0 10px;
-  padding: 10px;
   border: 3px solid red;
-  width: fit-content; }
+  width: 380px;
+  margin: auto; }
 
 #contacTit {
   margin: 40px 10px 10px 10px;
@@ -49,6 +48,9 @@ footer {
   width: 100vw;
   align-items: center;
   justify-content: center; }
+
+#banfield {
+  text-align: center; }
 
 #mainHistoria p {
   text-align: justify;
