@@ -28,7 +28,6 @@ footer {
       padding: 5px; }
 
 #contactos {
-  border: 3px solid red;
   width: 380px;
   margin: auto; }
 
@@ -50,7 +49,10 @@ footer {
   justify-content: center; }
 
 #banfield {
-  text-align: center; }
+  text-align: center;
+  border: 3px solid red;
+  border-radius: 15px;
+  padding: 15px; }
 
 #mainHistoria p {
   text-align: justify;
@@ -174,7 +176,7 @@ body {
   font-size: 2em;
   color: #da0037; }
 
-.radio, #contactos {
+.radio {
   border-radius: 15px;
   box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.326); }
 
