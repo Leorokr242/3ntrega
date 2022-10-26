@@ -2,3 +2,7 @@
     @include container--card
 
 }
+
+#prodTit {
+    @extend #tituloHistoria;
+    @include ShadowT }

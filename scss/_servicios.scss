@@ -15,3 +15,6 @@
 .container--servicios{
       @include container--card
 }
+#servTit {
+    @extend #tituloHistoria;
+    @include ShadowT }
